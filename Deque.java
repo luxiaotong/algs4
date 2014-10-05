@@ -3,13 +3,16 @@ import java.util.NoSuchElementException;
 
 public class Deque<Item> implements Iterable<Item>
 {
-	/*
-	public Deque()                           // construct an empty deque
-	*/
+	private Node first;
+	private Node last;
+	private int  N;
 
-	private Node first 	= null;
-	private Node last 	= null;
-	private int  N 		= 0;
+	public Deque()                           // construct an empty deque
+	{
+		first 	= null;
+		last	= null;
+		N		= 0;
+	}
 
 	private class Node
 	{
