@@ -86,24 +86,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
 	}
 
-	public void check()
-	{
-		Node tmp;
-	
-		if ( isEmpty() ) return;
-
-		StdOut.println("Queue:");
-		for ( tmp = first; tmp != null; tmp = tmp.next ) {
-			StdOut.println(tmp.item);
-		}
-		
-		/*
-		StdOut.println("first: " + first.item);
-		StdOut.println("last : " + last.item);
-		StdOut.println("size : " + size());
-		*/
-	}
-   
 	public Iterator<Item> iterator()         // return an independent iterator over items in random order
 	{
 		return new ListIterator();
@@ -137,7 +119,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             //else if (!rq.isEmpty()) StdOut.println(rq.sample());
 			else break;
 			
-			//rq.check();
         }
 		for(String str : rq)
 			StdOut.println(str);
