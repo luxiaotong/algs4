@@ -69,6 +69,5 @@ public class Percolation {
 		p.open(4,3);
 		p.open(5,3);
 		StdOut.println("percolates: " + p.percolates());
-		p.printAll();
 	}
 }
