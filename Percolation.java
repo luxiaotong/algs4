@@ -59,16 +59,6 @@ public class Percolation {
 		return wquuf.connected( 0, square*square+1 );
 	}
 	
-	public void printAll()
-	{
-		for ( int i = 0; i < square; i ++ ) {
-			for ( int j = 0; j < square; j ++ ) {
-				StdOut.print(grid[i][j]+" ");
-			}
-			StdOut.println();
-		}
-	}
-
    	public static void main(String[] args)   // test client (optional)
 	{
 		Percolation p = new Percolation(5);
